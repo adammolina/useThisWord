@@ -1,13 +1,17 @@
-function checkWord() {
-    var input = document.getElementById("userInput");
-    var badWords = ["fuck", "ass", "shit", "crap", "bloody", "git", "bullshit", "pissed", "bitch", "tit", "prick" "asshole", "twat", "pussy", "punani", "cock", "dick", "dickhead", "bastard", "motherfucker", "wanker", "cunt"]
+const myForm = document.getElementById("form");
+myForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    if (input.includes(badWords)) {
-      alert("No can do.")
+  function theBadWord() {
+    var userInput = document.getElementById("theWord").value;
+    var realWord = userInput.toLowerCase();
+    var badWordArr = ["fuck", "shit", "bitch", "cunt", "ass", "dick", "dickhead", "pussy", "wanker", "fucker", "motherfucker", "dogshit", "balls", "bullshit", "tits", "tit", "prick", "twat", "punani", "minge", "cock", "bastard", "nig", "nigga", "nigger", "spic", "fag", "faggot", "horseshit"];
+
+    if (badWordArr.includes(realWord)) {
+      document.querySelector("h2").innerHTML = "You can't say that at work. <br><br>Dumbass.";
     } else {
-      alert("You're good to go!")
+      document.querySelector("h2").innerHTML = "That's fine to say.";
     }
-
-
-
   }
+  theBadWord();
+})
