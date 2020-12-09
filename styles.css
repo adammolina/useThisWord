@@ -35,17 +35,13 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.horseImg {
-  width: 100%;
-  height: auto;
+.workImg {
   padding: none;
   margin-bottom: 10rem;
-}
-
-.horseImg {
   width: 3rem;
   height: 3rem;
 }
+
 
 .form-group {
   padding: 1rem 0;
