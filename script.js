@@ -1,4 +1,4 @@
-const myForm = document.getElementById("form");
+const myForm = document.getElementById("form"); //Need this to not reload the page whenever the submit button is clicked
 myForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
